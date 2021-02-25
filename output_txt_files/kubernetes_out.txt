@@ -1,0 +1,17 @@
+[Terminal 1]
+➜  udacity-ml-microservice-kubernetes git:(master) ✗ ./run_kubernetes.sh
+error: failed to create deployment: deployments.apps "udacity-ml" already exists
+NAME                          READY   STATUS    RESTARTS   AGE
+udacity-ml-799b6cbf78-xfs6c   1/1     Running   0          2m54s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+[Terminal 2]
+➜  udacity-ml-microservice-kubernetes git:(master) ✗ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
